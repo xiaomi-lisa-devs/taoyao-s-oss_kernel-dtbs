@@ -111,6 +111,9 @@
 					/* Page 0 */
 					39 00 00 00 00 00 06 F0 55 AA 52 08 00
 					39 00 00 00 00 00 02 C0 4E
+					//esd normal high without mipi error
+					39 00 00 00 00 00 02 6F 05
+					39 00 00 00 00 00 02 BE 88
 					//PMIC normal FD en
 					39 00 00 00 00 00 02 6F 08
 					39 00 00 00 00 00 02 B5 32
@@ -212,10 +215,6 @@
 					05 01 00 00 00 00 02 29 00];
 				qcom,mdss-dsi-on-command-state = "dsi_lp_mode";
 
-				qcom,mdss-dsi-pre-off-command = [
-					39 01 00 00 00 00 06 F0 55 AA 52 08 01
-					39 01 00 00 00 00 02 CE 0C];
-				qcom,mdss-dsi-pre-off-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-off-command = [
 					05 01 00 00 00 00 02 28 00
 					05 01 00 00 64 00 02 10 00];
@@ -228,7 +227,7 @@
 					39 00 00 00 00 00 02 BF 02
 					39 01 00 00 11 00 02 2F 01
 				];
-				qcom,mdss-dsi-timing-switch-command-state = "dsi_lp_mode";
+				qcom,mdss-dsi-timing-switch-command-state = "dsi_hs_mode";
 
 				qcom,mdss-dsi-nolp-command = [
 					/* AOD off */
@@ -240,7 +239,7 @@
 					39 00 00 00 00 00 02 65 00
 					39 01 00 00 07 00 02 38 00
 				];
-				qcom,mdss-dsi-nolp-command-state = "dsi_lp_mode";
+				qcom,mdss-dsi-nolp-command-state = "dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-version = <0x11>;
@@ -317,6 +316,9 @@
 					/* Page 0 */
 					39 00 00 00 00 00 06 F0 55 AA 52 08 00
 					39 00 00 00 00 00 02 C0 4E
+					//esd normal high without mipi error
+					39 00 00 00 00 00 02 6F 05
+					39 00 00 00 00 00 02 BE 88
 					//PMIC normal FD en
 					39 00 00 00 00 00 02 6F 08
 					39 00 00 00 00 00 02 B5 32
@@ -418,10 +420,6 @@
 					05 01 00 00 00 00 02 29 00];
 				qcom,mdss-dsi-on-command-state = "dsi_lp_mode";
 
-				qcom,mdss-dsi-pre-off-command = [
-					39 01 00 00 00 00 06 F0 55 AA 52 08 01
-					39 01 00 00 00 00 02 CE 0C];
-				qcom,mdss-dsi-pre-off-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-off-command = [
 					05 01 00 00 00 00 02 28 00
 					05 01 00 00 64 00 02 10 00];
@@ -442,7 +440,7 @@
 					39 00 00 00 00 00 02 BF 05
 					39 01 00 00 00 00 02 2F 02
 				];
-				qcom,mdss-dsi-nolp-command-state = "dsi_lp_mode";
+				qcom,mdss-dsi-nolp-command-state = "dsi_hs_mode";
 
 				qcom,mdss-dsi-timing-switch-command = [
 					/* Frame Rate 90Hz */
@@ -451,7 +449,7 @@
 					39 00 00 00 00 00 02 BF 05
 					39 01 00 00 11 00 02 2F 02
 				];
-				qcom,mdss-dsi-timing-switch-command-state = "dsi_lp_mode";
+				qcom,mdss-dsi-timing-switch-command-state = "dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-version = <0x11>;
@@ -528,6 +526,9 @@
 					/* Page 0 */
 					39 00 00 00 00 00 06 F0 55 AA 52 08 00
 					39 00 00 00 00 00 02 C0 4E
+					//esd normal high without mipi error
+					39 00 00 00 00 00 02 6F 05
+					39 00 00 00 00 00 02 BE 88
 					//PMIC normal FD en
 					39 00 00 00 00 00 02 6F 08
 					39 00 00 00 00 00 02 B5 32
@@ -629,10 +630,6 @@
 					05 01 00 00 00 00 02 29 00];
 				qcom,mdss-dsi-on-command-state = "dsi_lp_mode";
 
-				qcom,mdss-dsi-pre-off-command = [
-					39 01 00 00 00 00 06 F0 55 AA 52 08 01
-					39 01 00 00 00 00 02 CE 0C];
-				qcom,mdss-dsi-pre-off-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-off-command = [
 					05 01 00 00 00 00 02 28 00
 					05 01 00 00 64 00 02 10 00];
@@ -645,7 +642,7 @@
 					39 00 00 00 00 00 02 BF 03
 					39 01 00 00 11 00 02 2F 03
 				];
-				qcom,mdss-dsi-timing-switch-command-state = "dsi_lp_mode";
+				qcom,mdss-dsi-timing-switch-command-state = "dsi_hs_mode";
 
 				qcom,mdss-dsi-nolp-command = [
 					/* AOD off */
@@ -662,7 +659,7 @@
 					39 00 00 00 00 00 02 BF 03
 					39 01 00 00 00 00 02 2F 03
 				];
-				qcom,mdss-dsi-nolp-command-state = "dsi_lp_mode";
+				qcom,mdss-dsi-nolp-command-state = "dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-version = <0x11>;
@@ -704,6 +701,21 @@
 	mi,panel-hbm-backlight-threshold = <2047>;
 	mi,panel-cup-dbi-reg-index = <1>;
 
+	/* IRQF_ONESHOT | IRQF_TRIGGER_FALLING */
+	mi,esd-err-irq-gpio = <&tlmm 75 0x2002>;
+ 	qcom,esd-check-enabled;
+	qcom,esd-aod-check-enabled;
+
+	qcom,mdss-dsi-panel-status-check-mode = "reg_read";
+	qcom,mdss-dsi-panel-status-offset-command = [
+		39 01 00 00 00 00 05 FF AA 55 A5 81
+		15 01 00 00 00 00 02 6F 0F];
+	qcom,mdss-dsi-panel-status-command = [06 01 00 00 00 00 01 FA];
+	qcom,mdss-dsi-panel-status-command-state = "dsi_hs_mode";
+	qcom,mdss-dsi-panel-status-offset-command-state = "dsi_hs_mode";
+	qcom,mdss-dsi-panel-status-value = <0x00>;
+	qcom,mdss-dsi-panel-status-read-length = <1>;
+
 	 mi,panel-on-dimming-delay = <120>;
 
 	 mi,panel-aod-to-off-command-need-enabled;
@@ -713,14 +725,14 @@
 		timing@0 {
 			mi,mdss-dsc-panel-id = <0x00004B38 0x00420200>;
 			mi,mdss-dsi-dimmingon-command = [15 01 00 00 00 00 02 53 28];
-			mi,mdss-dsi-dimmingon-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-dimmingoff-command = [15 01 00 00 00 00 02 53 20];
-			mi,mdss-dsi-dimmingoff-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-dimmingoff-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-hbm-on-command = [39 01 00 00 00 00 03 51 0F FF];
-			mi,mdss-dsi-hbm-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-hbm-on-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-hbm-off-command = [39 01 00 00 00 00 03 51 07 FF];
-			mi,mdss-dsi-hbm-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-hbm-off-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-doze-hbm-command = [
 				/* Frame Rate 60Hz */
@@ -735,7 +747,7 @@
 				39 00 00 00 00 00 02 39 00
 				39 01 00 00 00 00 02 65 01
 			];
-			mi,mdss-dsi-doze-hbm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-doze-hbm-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-doze-lbm-command = [
 				/* Frame Rate 60Hz */
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -749,7 +761,7 @@
 				39 00 00 00 00 00 02 39 00
 				39 01 00 00 00 00 02 65 01
 			];
-			mi,mdss-dsi-doze-lbm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-doze-lbm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-doze-hbm-nolp-command = [
 				/* AOD off */
@@ -763,7 +775,7 @@
 				39 00 00 00 00 00 06 F0 55 AA 52 08 01
 				39 01 00 00 00 00 05 BA 10 10 10 10
 			];
-			mi,mdss-dsi-doze-hbm-nolp-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-doze-hbm-nolp-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-doze-lbm-nolp-command = [
 				/* AOD off */
 				39 01 00 00 00 00 06 F0 55 AA 52 08 00
@@ -776,16 +788,16 @@
 				39 00 00 00 00 00 06 F0 55 AA 52 08 01
 				39 01 00 00 00 00 05 BA 10 10 10 10
 			];
-			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-flat-mode-on-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 08
 				39 01 00 00 00 00 02 B9 01];
-			mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-flat-mode-on-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-flat-mode-off-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 08
 				39 01 00 00 00 00 02 B9 00];
-			mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-flat-mode-off-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-dc-on-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 00
@@ -807,7 +819,7 @@
 									06 EA 07 44 07 9E 07 FF
 				
 			];
-			mi,mdss-dsi-dc-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-dc-on-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-dc-off-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 00
 				39 00 00 00 00 00 02 B2 98
@@ -826,7 +838,7 @@
 									06 17 06 3C 06 61 06 86 06 AB 06 D0 06 F5 07 1A 07 3F 07 64
 									07 89 07 AE 07 D3 07 FF
 			];
-			mi,mdss-dsi-dc-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-dc-off-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-panel-demura-when-dc-off-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 04
@@ -842,7 +854,7 @@
 									00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 									00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 			];
-			mi,mdss-dsi-panel-demura-when-dc-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-panel-demura-when-dc-off-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-panel-demura-when-dc-on-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 04
 				39 00 00 00 00 00 02 6F 00
@@ -857,20 +869,20 @@
 									00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 									00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 			];
-			mi,mdss-dsi-panel-demura-when-dc-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-panel-demura-when-dc-on-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-hbm-fod-on-command = [
 				39 01 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
 				39 01 00 00 00 00 02 87 04
 			];
-			mi,mdss-dsi-hbm-fod-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-hbm-fod-on-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-hbm-fod-off-command = [
 				39 01 00 00 00 00 03 51 07 FF
 				39 00 00 00 00 00 02 6F 02
 				39 01 00 00 00 00 02 87 04
 			];
-			mi,mdss-dsi-hbm-fod-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-hbm-fod-off-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-1000nit-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -886,7 +898,7 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 21 00 02 87 05
 			];
 			mi,mdss-dsi-local-hbm-normal-white-1000nit-command-state = "dsi_hs_mode";
 
@@ -920,7 +932,7 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 21 00 02 87 05
 			];
 			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-state = "dsi_hs_mode";
 
@@ -938,9 +950,9 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 21 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-normal-white-750nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-750nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-500nit-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -956,9 +968,9 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 21 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-normal-white-500nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-500nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-110nit-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -974,9 +986,9 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 21 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command = [
 				/* AOD off */
@@ -1008,9 +1020,9 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 21 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -1026,17 +1038,16 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 21 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 01 00 00 00 00 02 53 20
 				39 00 00 00 00 00 03 51 00 00
-				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 04
+				39 01 00 00 00 00 04 87 00 00 04
 			];
-			mi,mdss-dsi-local-hbm-off-to-normal-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-normal-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-hbm-command = [
 				39 01 00 00 00 00 02 53 20
@@ -1044,14 +1055,13 @@
 				39 00 00 00 00 00 02 6F 02
 				39 01 00 00 00 00 02 87 04
 			];
-			mi,mdss-dsi-local-hbm-off-to-hbm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-hbm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-hlpm-command = [
 				/* local hbm off */
 				39 01 00 00 00 00 02 53 20
 				39 00 00 00 00 00 03 51 00 00
-				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 04
+				39 01 00 00 00 00 04 87 00 00 04
 				/* aod hbm */
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
 				39 00 00 00 00 00 02 6F 03
@@ -1064,14 +1074,13 @@
 				39 00 00 00 00 00 02 39 00
 				39 01 00 00 00 00 02 65 01
 			];
-			mi,mdss-dsi-local-hbm-off-to-hlpm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-hlpm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-llpm-command = [
 				/* local hbm off */
 				39 01 00 00 00 00 02 53 20
 				39 00 00 00 00 00 03 51 00 00
-				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 04
+				39 01 00 00 00 00 04 87 00 00 04
 				/* aod lbm */
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
 				39 00 00 00 00 00 02 6F 03
@@ -1084,26 +1093,31 @@
 				39 00 00 00 00 00 02 39 00
 				39 01 00 00 00 00 02 65 01
 			];
-			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
+
+			mi,mdss-dsi-pre-doze-to-off-command = [
+				39 01 00 00 00 00 06 F0 55 AA 52 08 01
+				39 01 00 00 00 00 02 CE 0C];
+			mi,mdss-dsi-pre-doze-to-off-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-set-cup-dbi-command = [
 				//TEST mode
 				39 01 00 00 00 00 06 F0 55 AA 52 08 08
                                 39 01 00 00 00 00 0C D2 00 01 10 00 87 00 2C 00 00 00 00
 			];
-			mi,mdss-dsi-set-cup-dbi-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-set-cup-dbi-command-state = "dsi_hs_mode";
 		};
 		timing@1 {
 			mi,mdss-dsc-panel-id = <0x00004B38 0x00420200>;
 			mi,mdss-dsi-dimmingon-command = [15 01 00 00 00 00 02 53 28];
-			mi,mdss-dsi-dimmingon-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-dimmingoff-command = [15 01 00 00 00 00 02 53 20];
-			mi,mdss-dsi-dimmingoff-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-dimmingoff-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-hbm-on-command = [39 01 00 00 00 00 03 51 0F FF];
-			mi,mdss-dsi-hbm-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-hbm-on-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-hbm-off-command = [39 01 00 00 00 00 03 51 07 FF];
-			mi,mdss-dsi-hbm-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-hbm-off-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-doze-hbm-command = [
 				/* Frame Rate 60Hz */
@@ -1118,7 +1132,7 @@
 				39 00 00 00 00 00 02 39 00
 				39 01 00 00 00 00 02 65 01
 			];
-			mi,mdss-dsi-doze-hbm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-doze-hbm-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-doze-lbm-command = [
 				/* Frame Rate 60Hz */
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -1132,7 +1146,7 @@
 				39 00 00 00 00 00 02 39 00
 				39 01 00 00 00 00 02 65 01
 			];
-			mi,mdss-dsi-doze-lbm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-doze-lbm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-doze-hbm-nolp-command = [
 				/* AOD off */
@@ -1151,7 +1165,7 @@
 				39 00 00 00 00 00 06 F0 55 AA 52 08 01
 				39 01 00 00 00 00 05 BA 10 10 10 10
 			];
-			mi,mdss-dsi-doze-hbm-nolp-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-doze-hbm-nolp-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-doze-lbm-nolp-command = [
 				/* AOD off */
 				39 01 00 00 00 00 06 F0 55 AA 52 08 00
@@ -1169,16 +1183,16 @@
 				39 00 00 00 00 00 06 F0 55 AA 52 08 01
 				39 01 00 00 00 00 05 BA 10 10 10 10
 			];
-			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-flat-mode-on-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 08
 				39 01 00 00 00 00 02 B9 01];
-			mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-flat-mode-on-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-flat-mode-off-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 08
 				39 01 00 00 00 00 02 B9 00];
-			mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-flat-mode-off-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-dc-on-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 00
@@ -1200,7 +1214,7 @@
 									06 EA 07 44 07 9E 07 FF
 				
 			];
-			mi,mdss-dsi-dc-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-dc-on-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-dc-off-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 00
 				39 00 00 00 00 00 02 B2 98
@@ -1219,7 +1233,7 @@
 									06 17 06 3C 06 61 06 86 06 AB 06 D0 06 F5 07 1A 07 3F 07 64
 									07 89 07 AE 07 D3 07 FF
 			];
-			mi,mdss-dsi-dc-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-dc-off-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-panel-demura-when-dc-off-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 04
@@ -1235,7 +1249,7 @@
 									00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 									00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 			];
-			mi,mdss-dsi-panel-demura-when-dc-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-panel-demura-when-dc-off-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-panel-demura-when-dc-on-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 04
 				39 00 00 00 00 00 02 6F 00
@@ -1250,20 +1264,20 @@
 									00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 									00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 			];
-			mi,mdss-dsi-panel-demura-when-dc-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-panel-demura-when-dc-on-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-hbm-fod-on-command = [
 				39 01 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
 				39 01 00 00 00 00 02 87 04
 			];
-			mi,mdss-dsi-hbm-fod-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-hbm-fod-on-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-hbm-fod-off-command = [
 				39 01 00 00 00 00 03 51 07 FF
 				39 00 00 00 00 00 02 6F 02
 				39 01 00 00 00 00 02 87 04
 			];
-			mi,mdss-dsi-hbm-fod-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-hbm-fod-off-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-1000nit-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -1279,7 +1293,7 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 17 00 02 87 05
 			];
 			mi,mdss-dsi-local-hbm-normal-white-1000nit-command-state = "dsi_hs_mode";
 
@@ -1313,7 +1327,7 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 17 00 02 87 05
 			];
 			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-state = "dsi_hs_mode";
 
@@ -1331,9 +1345,9 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 17 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-normal-white-750nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-750nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-500nit-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -1349,9 +1363,9 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 17 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-normal-white-500nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-500nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-110nit-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -1367,9 +1381,9 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 17 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command = [
 				/* AOD off */
@@ -1401,9 +1415,9 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 17 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -1419,17 +1433,16 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 17 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 01 00 00 00 00 02 53 20
 				39 00 00 00 00 00 03 51 00 00
-				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 04
+				39 01 00 00 00 00 04 87 00 00 04
 			];
-			mi,mdss-dsi-local-hbm-off-to-normal-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-normal-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-hbm-command = [
 				39 01 00 00 00 00 02 53 20
@@ -1437,14 +1450,13 @@
 				39 00 00 00 00 00 02 6F 02
 				39 01 00 00 00 00 02 87 04
 			];
-			mi,mdss-dsi-local-hbm-off-to-hbm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-hbm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-hlpm-command = [
 				/* local hbm off */
 				39 01 00 00 00 00 02 53 20
 				39 00 00 00 00 00 03 51 00 00
-				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 04
+				39 01 00 00 00 00 04 87 00 00 04
 				/* aod hbm */
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
 				39 00 00 00 00 00 02 6F 03
@@ -1457,14 +1469,13 @@
 				39 00 00 00 00 00 02 39 00
 				39 01 00 00 00 00 02 65 01
 			];
-			mi,mdss-dsi-local-hbm-off-to-hlpm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-hlpm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-llpm-command = [
 				/* local hbm off */
 				39 01 00 00 00 00 02 53 20
 				39 00 00 00 00 00 03 51 00 00
-				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 04
+				39 01 00 00 00 00 04 87 00 00 04
 				/* aod lbm */
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
 				39 00 00 00 00 00 02 6F 03
@@ -1477,26 +1488,31 @@
 				39 00 00 00 00 00 02 39 00
 				39 01 00 00 00 00 02 65 01
 			];
-			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
+
+			mi,mdss-dsi-pre-doze-to-off-command = [
+				39 01 00 00 00 00 06 F0 55 AA 52 08 01
+				39 01 00 00 00 00 02 CE 0C];
+			mi,mdss-dsi-pre-doze-to-off-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-set-cup-dbi-command = [
 				//TEST mode
 				39 01 00 00 00 00 06 F0 55 AA 52 08 08
                                 39 01 00 00 00 00 0C D2 00 01 10 00 87 00 2C 00 00 00 00
 			];
-			mi,mdss-dsi-set-cup-dbi-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-set-cup-dbi-command-state = "dsi_hs_mode";
 		};
 		timing@2 {
 			mi,mdss-dsc-panel-id = <0x00004B38 0x00420200>;
 			mi,mdss-dsi-dimmingon-command = [15 01 00 00 00 00 02 53 28];
-			mi,mdss-dsi-dimmingon-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-dimmingoff-command = [15 01 00 00 00 00 02 53 20];
-			mi,mdss-dsi-dimmingoff-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-dimmingoff-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-hbm-on-command = [39 01 00 00 00 00 03 51 0F FF];
-			mi,mdss-dsi-hbm-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-hbm-on-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-hbm-off-command = [39 01 00 00 00 00 03 51 07 FF];
-			mi,mdss-dsi-hbm-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-hbm-off-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-doze-hbm-command = [
 				/* Frame Rate 60Hz */
@@ -1511,7 +1527,7 @@
 				39 00 00 00 00 00 02 39 00
 				39 01 00 00 00 00 02 65 01
 			];
-			mi,mdss-dsi-doze-hbm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-doze-hbm-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-doze-lbm-command = [
 				/* Frame Rate 60Hz */
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -1525,7 +1541,7 @@
 				39 00 00 00 00 00 02 39 00
 				39 01 00 00 00 00 02 65 01
 			];
-			mi,mdss-dsi-doze-lbm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-doze-lbm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-doze-hbm-nolp-command = [
 				/* AOD off */
@@ -1544,7 +1560,7 @@
 				39 00 00 00 00 00 06 F0 55 AA 52 08 01
 				39 01 00 00 00 00 05 BA 10 10 10 10
 			];
-			mi,mdss-dsi-doze-hbm-nolp-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-doze-hbm-nolp-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-doze-lbm-nolp-command = [
 				/* AOD off */
 				39 01 00 00 00 00 06 F0 55 AA 52 08 00
@@ -1562,16 +1578,16 @@
 				39 00 00 00 00 00 06 F0 55 AA 52 08 01
 				39 01 00 00 00 00 05 BA 10 10 10 10
 			];
-			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-flat-mode-on-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 08
 				39 01 00 00 00 00 02 B9 01];
-			mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-flat-mode-on-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-flat-mode-off-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 08
 				39 01 00 00 00 00 02 B9 00];
-			mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-flat-mode-off-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-dc-on-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 00
@@ -1593,7 +1609,7 @@
 									06 EA 07 44 07 9E 07 FF
 				
 			];
-			mi,mdss-dsi-dc-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-dc-on-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-dc-off-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 00
 				39 00 00 00 00 00 02 B2 98
@@ -1612,7 +1628,7 @@
 									06 17 06 3C 06 61 06 86 06 AB 06 D0 06 F5 07 1A 07 3F 07 64
 									07 89 07 AE 07 D3 07 FF
 			];
-			mi,mdss-dsi-dc-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-dc-off-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-panel-demura-when-dc-off-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 04
@@ -1628,7 +1644,7 @@
 									00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 									00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 			];
-			mi,mdss-dsi-panel-demura-when-dc-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-panel-demura-when-dc-off-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-panel-demura-when-dc-on-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 04
 				39 00 00 00 00 00 02 6F 00
@@ -1643,20 +1659,20 @@
 									00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 									00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 			];
-			mi,mdss-dsi-panel-demura-when-dc-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-panel-demura-when-dc-on-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-hbm-fod-on-command = [
 				39 01 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
 				39 01 00 00 00 00 02 87 04
 			];
-			mi,mdss-dsi-hbm-fod-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-hbm-fod-on-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-hbm-fod-off-command = [
 				39 01 00 00 00 00 03 51 07 FF
 				39 00 00 00 00 00 02 6F 02
 				39 01 00 00 00 00 02 87 04
 			];
-			mi,mdss-dsi-hbm-fod-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-hbm-fod-off-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-1000nit-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -1672,7 +1688,7 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 11 00 02 87 05
 			];
 			mi,mdss-dsi-local-hbm-normal-white-1000nit-command-state = "dsi_hs_mode";
 
@@ -1706,7 +1722,7 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 11 00 02 87 05
 			];
 			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-state = "dsi_hs_mode";
 
@@ -1724,9 +1740,9 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 11 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-normal-white-750nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-750nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-500nit-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -1742,9 +1758,9 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 11 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-normal-white-500nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-500nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-110nit-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -1760,9 +1776,9 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 11 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command = [
 				/* AOD off */
@@ -1794,9 +1810,9 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 11 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
@@ -1812,17 +1828,16 @@
 				39 00 00 00 00 00 03 87 0F FF
 				39 00 00 00 00 00 03 51 0F FF
 				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 05
+				39 01 00 00 11 00 02 87 05
 			];
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 01 00 00 00 00 02 53 20
 				39 00 00 00 00 00 03 51 00 00
-				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 04
+				39 01 00 00 00 00 04 87 00 00 04
 			];
-			mi,mdss-dsi-local-hbm-off-to-normal-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-normal-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-hbm-command = [
 				39 01 00 00 00 00 02 53 20
@@ -1830,14 +1845,13 @@
 				39 00 00 00 00 00 02 6F 02
 				39 01 00 00 00 00 02 87 04
 			];
-			mi,mdss-dsi-local-hbm-off-to-hbm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-hbm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-hlpm-command = [
 				/* local hbm off */
 				39 01 00 00 00 00 02 53 20
 				39 00 00 00 00 00 03 51 00 00
-				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 04
+				39 01 00 00 00 00 04 87 00 00 04
 				/* aod hbm */
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
 				39 00 00 00 00 00 02 6F 03
@@ -1850,14 +1864,13 @@
 				39 00 00 00 00 00 02 39 00
 				39 01 00 00 00 00 02 65 01
 			];
-			mi,mdss-dsi-local-hbm-off-to-hlpm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-hlpm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-llpm-command = [
 				/* local hbm off */
 				39 01 00 00 00 00 02 53 20
 				39 00 00 00 00 00 03 51 00 00
-				39 00 00 00 00 00 02 6F 02
-				39 01 00 00 00 00 02 87 04
+				39 01 00 00 00 00 04 87 00 00 04
 				/* aod lbm */
 				39 01 00 00 00 00 06 F0 55 AA 52 08 02
 				39 00 00 00 00 00 02 6F 03
@@ -1870,14 +1883,19 @@
 				39 00 00 00 00 00 02 39 00
 				39 01 00 00 00 00 02 65 01
 			];
-			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
+
+			mi,mdss-dsi-pre-doze-to-off-command = [
+				39 01 00 00 00 00 06 F0 55 AA 52 08 01
+				39 01 00 00 00 00 02 CE 0C];
+			mi,mdss-dsi-pre-doze-to-off-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-set-cup-dbi-command = [
 				//TEST mode
 				39 01 00 00 00 00 06 F0 55 AA 52 08 08
                                 39 01 00 00 00 00 0C D2 00 01 10 00 87 00 2C 00 00 00 00
 			];
-			mi,mdss-dsi-set-cup-dbi-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-set-cup-dbi-command-state = "dsi_hs_mode";
 		};
 	};
 };

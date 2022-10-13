@@ -178,7 +178,7 @@ endif
 
 ifeq ($(CONFIG_BUILD_ARM64_DT_OVERLAY),y)
 dtbo-$(CONFIG_ARCH_YUPIK) +=    \
-	taoyao-sm7325-overlay.dtbo \
+	zijin-sm7325-overlay.dtbo \
 	yupik-idp-overlay.dtbo \
 	yupik-idp-pm7250b-overlay.dtbo \
 	yupikp-idp-overlay.dtbo \
@@ -186,7 +186,7 @@ dtbo-$(CONFIG_ARCH_YUPIK) +=    \
 	yupikp-qrd-overlay.dtbo \
 	yupikp-idps-amoled-overlay.dtbo \
 
-taoyao-sm7325-overlay.dtbo-base := yupik.dtb
+zijin-sm7325-overlay.dtbo-base := yupik.dtb
 yupik-idp-overlay.dtbo-base := yupik.dtb
 yupik-idp-pm7250b-overlay.dtbo-base := yupik.dtb
 yupikp-idp-overlay.dtbo-base := yupikp.dtb

@@ -65,7 +65,7 @@
 				qcom,mdss-dsi-v-bottom-border = <0>;
 				qcom,mdss-dsi-panel-clockrate = <1360000000>;
 				qcom,mdss-dsi-panel-jitter = <0x5 0x1>;
-				//qcom,mdss-mdp-transfer-time-us = <9500>;
+				qcom,mdss-mdp-transfer-time-us = <6800>;
 				qcom,mdss-dsi-on-command = [
 					/* 1 DSC Setting */
 					15 01 00 00 00 00 02 9D 01                           /* Compression Enable */
@@ -189,13 +189,13 @@
 				qcom,mdss-dsi-off-command-state = "dsi_lp_mode";
 
 				qcom,mdss-dsi-timing-switch-command = [
-					15 01 00 00 00 00 02 60 08
-					39 01 00 00 00 00 03 F0 5A 5A
-					39 01 00 00 00 00 03 FC 5A 5A
-					15 01 00 00 00 00 02 B0 55
-					15 01 00 00 00 00 02 D1 0E
-					15 01 00 00 00 00 02 F7 07
-					39 01 00 00 00 00 03 FC A5 A5
+					15 00 00 00 00 00 02 60 08
+					39 00 00 00 00 00 03 F0 5A 5A
+					39 00 00 00 00 00 03 FC 5A 5A
+					15 00 00 00 00 00 02 B0 55
+					15 00 00 00 00 00 02 D1 0E
+					15 00 00 00 00 00 02 F7 07
+					39 00 00 00 00 00 03 FC A5 A5
 					39 01 00 00 00 00 03 F0 A5 A5];
 				qcom,mdss-dsi-timing-switch-command-state = "dsi_lp_mode";
 
@@ -240,7 +240,7 @@
 				qcom,mdss-dsi-v-bottom-border = <0>;
 				qcom,mdss-dsi-panel-clockrate = <1360000000>;
 				qcom,mdss-dsi-panel-jitter = <0x5 0x1>;
-				//qcom,mdss-mdp-transfer-time-us = <9500>;
+				qcom,mdss-mdp-transfer-time-us = <14000>;
 				qcom,mdss-dsi-on-command = [
 					/* 1 DSC Setting */
 					15 01 00 00 00 00 02 9D 01                           /* Compression Enable */
@@ -364,14 +364,14 @@
 				qcom,mdss-dsi-off-command-state = "dsi_lp_mode";
 
 				qcom,mdss-dsi-timing-switch-command = [
-					15 01 00 00 00 00 02 60 00
-					39 01 00 00 00 00 03 F0 5A 5A
-					39 01 00 00 00 00 03 FC 5A 5A
-					15 01 00 00 00 00 02 B0 55
-					15 01 00 00 00 00 02 D1 0E
-					15 01 00 00 00 00 02 F7 07
-					39 01 00 00 00 00 03 FC A5 A5
-					39 01 00 00 00 00 03 F0 A5 A5];
+					15 00 00 00 00 00 02 60 00
+					39 00 00 00 00 00 03 F0 5A 5A
+					39 00 00 00 00 00 03 FC 5A 5A
+					15 00 00 00 00 00 02 B0 55
+					15 00 00 00 00 00 02 D1 0E
+					15 00 00 00 00 00 02 F7 07
+					39 00 00 00 00 00 03 FC A5 A5
+					39 01 00 00 11 00 03 F0 A5 A5];
 				qcom,mdss-dsi-timing-switch-command-state = "dsi_lp_mode";
 
 				qcom,mdss-dsi-nolp-command = [
@@ -415,7 +415,7 @@
 				qcom,mdss-dsi-v-bottom-border = <0>;
 				qcom,mdss-dsi-panel-clockrate = <1360000000>;
 				qcom,mdss-dsi-panel-jitter = <0x5 0x1>;
-				//qcom,mdss-mdp-transfer-time-us = <9500>;
+				qcom,mdss-mdp-transfer-time-us = <9500>;
 				qcom,mdss-dsi-on-command = [
 					/* 1 DSC Setting */
 					15 01 00 00 00 00 02 9D 01                           /* Compression Enable */
@@ -540,14 +540,14 @@
 
 				qcom,mdss-dsi-timing-switch-command = [
 					/* 90hz Frequency Select*/
-					15 01 00 00 00 00 02 60 08
-					39 01 00 00 00 00 03 F0 5A 5A
-					39 01 00 00 00 00 03 FC 5A 5A
-					15 01 00 00 00 00 02 B0 55
-					15 01 00 00 00 00 02 D1 53
-					15 01 00 00 00 00 02 F7 07
-					39 01 00 00 00 00 03 FC A5 A5
-					39 01 00 00 00 00 03 F0 A5 A5];
+					15 00 00 00 00 00 02 60 08
+					39 00 00 00 00 00 03 F0 5A 5A
+					39 00 00 00 00 00 03 FC 5A 5A
+					15 00 00 00 00 00 02 B0 55
+					15 00 00 00 00 00 02 D1 53
+					15 00 00 00 00 00 02 F7 07
+					39 00 00 00 00 00 03 FC A5 A5
+					39 01 00 00 11 00 03 F0 A5 A5];
 				qcom,mdss-dsi-timing-switch-command-state = "dsi_lp_mode";
 
 				qcom,mdss-dsi-nolp-command = [
@@ -587,6 +587,7 @@
 	mi,hbm-fod-bl-level = <2047>;
 	mi,hbm-bl-min-level = <1>;
 	mi,hbm-bl-max-level = <2047>;
+	mi,thermal-dimming-flag;
 
 	mi,esd-err-irq-gpio = <&tlmm 75 0x2001>;
 
@@ -596,11 +597,16 @@
 	mi,aod-nolp-command-enabled;
 
 	mi,mdss-dsi-panel-dc-threshold = <440>;
-	mi,mdss-dsi-panel-hbm-brightness = <1>;
 
 	mi,local-hbm-enabled;
-	mi,fod-low-brightness-clone-threshold = <35>;
-	mi,fod-low-brightness-lux-threshold = <1>;
+	mi,local-hbm-on-1000nit-51-index = <3>;
+	mi,local-hbm-off-to-hbm-51-index = <2>;
+	mi,doze-hbm-dbv-level = <196>;
+	mi,doze-lbm-dbv-level = <22>;
+
+	mi,fod-low-brightness-clone-threshold = <40>;
+	mi,fod-low-brightness-lux-threshold = <3>;
+	mi,mdss-dsi-panel-hbm-brightness = <1>;
 
 	mi,max-brightness-clone = <8191>;
 
@@ -664,27 +670,27 @@
 			mi,mdss-dsi-doze-lbm-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-doze-hbm-nolp-command = [
-				39 01 00 00 00 00 03 F0 5A 5A
-				39 01 00 00 00 00 03 FC 5A 5A
+				39 00 00 00 00 00 03 F0 5A 5A
+				39 00 00 00 00 00 03 FC 5A 5A
 				15 00 00 00 00 00 02 60 08
 				15 00 00 00 00 00 02 B0 55
 				15 00 00 00 00 00 02 D1 0E
 				15 00 00 00 00 00 02 53 28
-				15 01 00 00 00 00 02 F7 07
-				39 01 00 00 00 00 03 FC A5 A5
-				39 01 00 00 09 00 03 F0 A5 A5
+				15 00 00 00 00 00 02 F7 07
+				39 00 00 00 00 00 03 FC A5 A5
+				39 01 00 00 00 00 03 F0 A5 A5
 			];
 			mi,mdss-dsi-doze-hbm-nolp-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-doze-lbm-nolp-command = [
-				39 01 00 00 00 00 03 F0 5A 5A
-				39 01 00 00 00 00 03 FC 5A 5A
+				39 00 00 00 00 00 03 F0 5A 5A
+				39 00 00 00 00 00 03 FC 5A 5A
 				15 00 00 00 00 00 02 60 08
 				15 00 00 00 00 00 02 B0 55
 				15 00 00 00 00 00 02 D1 0E
 				15 00 00 00 00 00 02 53 29
-				15 01 00 00 00 00 02 F7 07
-				39 01 00 00 00 00 03 FC A5 A5
-				39 01 00 00 09 00 03 F0 A5 A5
+				15 00 00 00 00 00 02 F7 07
+				39 00 00 00 00 00 03 FC A5 A5
+				39 01 00 00 00 00 03 F0 A5 A5
 			];
 			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_lp_mode";
 
@@ -700,6 +706,17 @@
 				39 01 00 00 09 00 03 F0 A5 A5
 
 			];
+			mi,mdss-dsi-nature-flat-mode-on-command = [
+				39 01 00 00 00 00 03 F0 5A 5A
+				39 01 00 00 00 00 29 C6 37 21 E1 FF
+				67 86 00 B0 0E FF FF 0E FF 80 91 13
+				0E 0F 0E 3B 3D 38 4F 51 4B 5E 60 59
+				63 66 5E A4 E4 A4 08 00 80 00 00 22
+				39 01 00 00 00 00 02 B0 CD
+				39 01 00 00 00 00 0F D3 E2 06 06 06
+				92 2C 6A 80 5F 4C 40 33 FF 90
+				39 01 00 00 00 00 02 F7 07
+			];
 			mi,mdss-dsi-flat-mode-off-command = [
 				39 01 00 00 00 00 03 F0 5A 5A
 				39 00 00 00 00 00 29 C6
@@ -712,9 +729,20 @@
 				39 01 00 00 09 00 03 F0 A5 A5
 
 			];
+			mi,mdss-dsi-nature-flat-mode-off-command = [
+				39 01 00 00 00 00 03 F0 5A 5A
+				39 01 00 00 00 00 29 C6 37 01 E1 FF
+				67 86 00 B0 0E FF FF 0E FF 80 91 13
+				0E 0F 0E 3B 3D 38 4F 51 4B 5E 60 59
+				63 66 5E A4 E4 A4 08 00 80 00 00 22
+				39 01 00 00 00 00 02 B0 CD
+				39 01 00 00 00 00 02 D3 00
+				39 01 00 00 00 00 02 F7 07
+			];
 			mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-nature-flat-mode-on-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
-
+			mi,mdss-dsi-nature-flat-mode-off-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-crc-off-command = [
 				/* CRC Disable (Normal mode) */
 				39 01 00 00 00 00 02 80 00
@@ -729,6 +757,7 @@
 					39 00 00 00 00 00 03 F0 5A 5A
 					39 00 00 00 00 00 03 FC 5A 5A
 					15 00 00 00 00 00 02 53 30
+					39 00 00 00 00 00 03 51 00 00
 					15 00 00 00 00 00 02 60 08
 					15 00 00 00 00 00 02 F7 07
 					15 00 00 00 00 00 02 B0 43
@@ -772,9 +801,9 @@
 					80 08 00 80 08 00
 					15 00 00 00 00 00 02 F7 07
 					39 00 00 00 00 00 03 F0 A5 A5
-					39 01 00 00 10 00 03 FC A5 A5
+					39 01 00 00 19 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-1000nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-1000nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command = [
 					/* nolp*/
@@ -834,9 +863,9 @@
 					80 08 00 80 08 00
 					15 00 00 00 00 00 02 F7 07
 					39 00 00 00 00 00 03 F0 A5 A5
-					39 01 00 00 19 00 03 FC A5 A5
+					39 01 00 00 22 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-750nit-command = [
 					/* Local HBM setting*/
@@ -888,7 +917,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-750nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-750nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-500nit-command = [
 					/* Local HBM setting*/
@@ -940,7 +969,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-500nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-500nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-110nit-command = [
 					/* Local HBM setting*/
@@ -990,9 +1019,9 @@
 					80 08 00 80 08 00
 					15 00 00 00 00 00 02 F7 07
 					39 00 00 00 00 00 03 F0 A5 A5
-					39 01 00 00 10 00 03 FC A5 A5
+					39 01 00 00 19 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command = [
 					/* nolp*/
@@ -1052,9 +1081,9 @@
 					80 08 00 80 08 00
 					15 00 00 00 00 00 02 F7 07
 					39 00 00 00 00 00 03 F0 A5 A5
-					39 01 00 00 19 00 03 FC A5 A5
+					39 01 00 00 22 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-82nit-command = [
 					/* Local HBM setting*/
@@ -1106,7 +1135,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-82nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-82nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-55nit-command = [
 					/* Local HBM setting*/
@@ -1158,7 +1187,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-55nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-55nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
 					/* Local HBM setting*/
@@ -1210,7 +1239,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 					/* Local HBM setting*/
@@ -1218,7 +1247,17 @@
 					15 00 00 00 00 00 02 53 20
 					39 01 00 00 00 00 03 F0 A5 A5
 			];
-			mi,mdss-dsi-local-hbm-off-to-normal-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-normal-command-state = "dsi_hs_mode";
+
+			mi,mdss-dsi-local-hbm-off-to-hbm-command = [
+					/* Local HBM setting*/
+					39 00 00 00 00 00 03 F0 5A 5A
+					15 00 00 00 00 00 02 53 E8
+					39 00 00 00 00 00 03 51 00 00
+					15 00 00 00 00 00 02 F7 07
+					39 01 00 00 00 00 03 F0 A5 A5
+			];
+			mi,mdss-dsi-local-hbm-off-to-hbm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-hlpm-command = [
 					/* Local HBM setting*/
@@ -1227,7 +1266,7 @@
 					15 00 00 00 00 00 02 F7 07
 					39 01 00 00 00 00 03 F0 A5 A5
 			];
-			mi,mdss-dsi-local-hbm-off-to-hlpm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-hlpm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-llpm-command = [
 					/* Local HBM setting*/
@@ -1236,7 +1275,7 @@
 					15 00 00 00 00 00 02 F7 07
 					39 01 00 00 00 00 03 F0 A5 A5
 			];
-			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-spr-1d-rendering-command = [
 					39 00 00 00 00 00 03 F0 5A 5A
@@ -1251,12 +1290,6 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 			];
 			mi,mdss-dsi-spr-2d-rendering-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-color-invert-on-command = [05 01 00 00 00 00 01 21];
-			mi,mdss-dsi-color-invert-on-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-color-invert-off-command = [05 01 00 00 00 00 01 20];
-			mi,mdss-dsi-color-invert-off-command-state = "dsi_lp_mode";
 		};
 
 		timing@1{
@@ -1318,27 +1351,27 @@
 			mi,mdss-dsi-doze-lbm-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-doze-hbm-nolp-command = [
-				39 01 00 00 00 00 03 F0 5A 5A
-				39 01 00 00 00 00 03 FC 5A 5A
+				39 00 00 00 00 00 03 F0 5A 5A
+				39 00 00 00 00 00 03 FC 5A 5A
 				15 00 00 00 00 00 02 60 00
 				15 00 00 00 00 00 02 B0 55
 				15 00 00 00 00 00 02 D1 0E
 				15 00 00 00 00 00 02 53 28
-				15 01 00 00 00 00 02 F7 07
-				39 01 00 00 00 00 03 FC A5 A5
-				39 01 00 00 09 00 03 F0 A5 A5
+				15 00 00 00 00 00 02 F7 07
+				39 00 00 00 00 00 03 FC A5 A5
+				39 01 00 00 4C 00 03 F0 A5 A5
 			];
 			mi,mdss-dsi-doze-hbm-nolp-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-doze-lbm-nolp-command = [
-				39 01 00 00 00 00 03 F0 5A 5A
-				39 01 00 00 00 00 03 FC 5A 5A
+				39 00 00 00 00 00 03 F0 5A 5A
+				39 00 00 00 00 00 03 FC 5A 5A
 				15 00 00 00 00 00 02 60 00
 				15 00 00 00 00 00 02 B0 55
 				15 00 00 00 00 00 02 D1 0E
 				15 00 00 00 00 00 02 53 29
-				15 01 00 00 00 00 02 F7 07
-				39 01 00 00 00 00 03 FC A5 A5
-				39 01 00 00 09 00 03 F0 A5 A5
+				15 00 00 00 00 00 02 F7 07
+				39 00 00 00 00 00 03 FC A5 A5
+				39 01 00 00 4C 00 03 F0 A5 A5
 			];
 			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_lp_mode";
 
@@ -1354,6 +1387,17 @@
 				39 01 00 00 09 00 03 F0 A5 A5
 
 			];
+			mi,mdss-dsi-nature-flat-mode-on-command = [
+				39 01 00 00 00 00 03 F0 5A 5A
+				39 01 00 00 00 00 29 C6 37 21 E1 FF
+				67 86 00 B0 0E FF FF 0E FF 80 91 13
+				0E 0F 0E 3B 3D 38 4F 51 4B 5E 60 59
+				63 66 5E A4 E4 A4 08 00 80 00 00 22
+				39 01 00 00 00 00 02 B0 CD
+				39 01 00 00 00 00 0F D3 E2 06 06 06
+				92 2C 6A 80 5F 4C 40 33 FF 90
+				39 01 00 00 00 00 02 F7 07
+			];
 			mi,mdss-dsi-flat-mode-off-command = [
 				39 01 00 00 00 00 03 F0 5A 5A
 				39 00 00 00 00 00 29 C6
@@ -1366,9 +1410,20 @@
 				39 01 00 00 09 00 03 F0 A5 A5
 
 			];
+			mi,mdss-dsi-nature-flat-mode-off-command = [
+				39 01 00 00 00 00 03 F0 5A 5A
+				39 01 00 00 00 00 29 C6 37 01 E1 FF
+				67 86 00 B0 0E FF FF 0E FF 80 91 13
+				0E 0F 0E 3B 3D 38 4F 51 4B 5E 60 59
+				63 66 5E A4 E4 A4 08 00 80 00 00 22
+				39 01 00 00 00 00 02 B0 CD
+				39 01 00 00 00 00 02 D3 00
+				39 01 00 00 00 00 02 F7 07
+			];
 			mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-nature-flat-mode-on-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
-
+			mi,mdss-dsi-nature-flat-mode-off-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-crc-off-command = [
 				/* CRC Disable (Normal mode) */
 				39 01 00 00 00 00 02 80 00
@@ -1383,6 +1438,7 @@
 					39 00 00 00 00 00 03 F0 5A 5A
 					39 00 00 00 00 00 03 FC 5A 5A
 					15 00 00 00 00 00 02 53 30
+					39 00 00 00 00 00 03 51 00 00
 					15 00 00 00 00 00 02 60 00
 					15 00 00 00 00 00 02 F7 07
 					15 00 00 00 00 00 02 B0 43
@@ -1426,9 +1482,9 @@
 					80 08 00 80 08 00
 					15 00 00 00 00 00 02 F7 07
 					39 00 00 00 00 00 03 F0 A5 A5
-					39 01 00 00 21 00 03 FC A5 A5
+					39 01 00 00 32 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-1000nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-1000nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command = [
 					/* 60hz lbm nolp */
@@ -1488,9 +1544,9 @@
 					80 08 00 80 08 00
 					15 00 00 00 00 00 02 F7 07
 					39 00 00 00 00 00 03 F0 A5 A5
-					39 01 00 00 30 00 03 FC A5 A5
+					39 01 00 00 41 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-750nit-command = [
 					/* Local HBM setting*/
@@ -1542,7 +1598,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-750nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-750nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-500nit-command = [
 					/* Local HBM setting*/
@@ -1594,7 +1650,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-500nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-500nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-110nit-command = [
 					/* Local HBM setting*/
@@ -1644,9 +1700,9 @@
 					80 08 00 80 08 00
 					15 00 00 00 00 00 02 F7 07
 					39 00 00 00 00 00 03 F0 A5 A5
-					39 01 00 00 21 00 03 FC A5 A5
+					39 01 00 00 32 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command = [
 					/* 60hz lbm nolp */
@@ -1706,9 +1762,9 @@
 					80 08 00 80 08 00
 					15 00 00 00 00 00 02 F7 07
 					39 00 00 00 00 00 03 F0 A5 A5
-					39 01 00 00 30 00 03 FC A5 A5
+					39 01 00 00 41 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-82nit-command = [
 					/* Local HBM setting*/
@@ -1760,7 +1816,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-82nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-82nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-55nit-command = [
 					/* Local HBM setting*/
@@ -1812,7 +1868,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-55nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-55nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
 					/* Local HBM setting*/
@@ -1864,7 +1920,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 					/* Local HBM setting*/
@@ -1872,7 +1928,17 @@
 					15 00 00 00 00 00 02 53 20
 					39 01 00 00 00 00 03 F0 A5 A5
 			];
-			mi,mdss-dsi-local-hbm-off-to-normal-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-normal-command-state = "dsi_hs_mode";
+
+			mi,mdss-dsi-local-hbm-off-to-hbm-command = [
+					/* Local HBM setting*/
+					39 00 00 00 00 00 03 F0 5A 5A
+					15 00 00 00 00 00 02 53 E8
+					39 00 00 00 00 00 03 51 00 00
+					15 00 00 00 00 00 02 F7 07
+					39 01 00 00 00 00 03 F0 A5 A5
+			];
+			mi,mdss-dsi-local-hbm-off-to-hbm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-hlpm-command = [
 					/* Local HBM setting*/
@@ -1881,7 +1947,7 @@
 					15 00 00 00 00 00 02 F7 07
 					39 01 00 00 00 00 03 F0 A5 A5
 			];
-			mi,mdss-dsi-local-hbm-off-to-hlpm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-hlpm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-llpm-command = [
 					/* Local HBM setting*/
@@ -1890,7 +1956,7 @@
 					15 00 00 00 00 00 02 F7 07
 					39 01 00 00 00 00 03 F0 A5 A5
 			];
-			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-spr-1d-rendering-command = [
 					39 00 00 00 00 00 03 F0 5A 5A
@@ -1905,12 +1971,6 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 			];
 			mi,mdss-dsi-spr-2d-rendering-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-color-invert-on-command = [05 01 00 00 00 00 01 21];
-			mi,mdss-dsi-color-invert-on-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-color-invert-off-command = [05 01 00 00 00 00 01 20];
-			mi,mdss-dsi-color-invert-off-command-state = "dsi_lp_mode";
 		};
 
 		timing@2{
@@ -1988,27 +2048,27 @@
 			mi,mdss-dsi-doze-lbm-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-doze-hbm-nolp-command = [
-				39 01 00 00 00 00 03 F0 5A 5A
-				39 01 00 00 00 00 03 FC 5A 5A
+				39 00 00 00 00 00 03 F0 5A 5A
+				39 00 00 00 00 00 03 FC 5A 5A
 				15 00 00 00 00 00 02 60 08
 				15 00 00 00 00 00 02 B0 55
 				15 00 00 00 00 00 02 D1 53
 				15 00 00 00 00 00 02 53 28
-				15 01 00 00 00 00 02 F7 07
-				39 01 00 00 00 00 03 FC A5 A5
-				39 01 00 00 09 00 03 F0 A5 A5
+				15 00 00 00 00 00 02 F7 07
+				39 00 00 00 00 00 03 FC A5 A5
+				39 01 00 00 00 00 03 F0 A5 A5
 			];
 			mi,mdss-dsi-doze-hbm-nolp-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-doze-lbm-nolp-command = [
-				39 01 00 00 00 00 03 F0 5A 5A
-				39 01 00 00 00 00 03 FC 5A 5A
+				39 00 00 00 00 00 03 F0 5A 5A
+				39 00 00 00 00 00 03 FC 5A 5A
 				15 00 00 00 00 00 02 60 08
 				15 00 00 00 00 00 02 B0 55
 				15 00 00 00 00 00 02 D1 53
 				15 00 00 00 00 00 02 53 29
-				15 01 00 00 00 00 02 F7 07
-				39 01 00 00 00 00 03 FC A5 A5
-				39 01 00 00 09 00 03 F0 A5 A5
+				15 00 00 00 00 00 02 F7 07
+				39 00 00 00 00 00 03 FC A5 A5
+				39 01 00 00 00 00 03 F0 A5 A5
 			];
 			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_lp_mode";
 
@@ -2024,6 +2084,17 @@
 				39 01 00 00 09 00 03 F0 A5 A5
 
 			];
+			mi,mdss-dsi-nature-flat-mode-on-command = [
+				39 01 00 00 00 00 03 F0 5A 5A
+				39 01 00 00 00 00 29 C6 37 21 E1 FF
+				67 86 00 B0 0E FF FF 0E FF 80 91 13
+				0E 0F 0E 3B 3D 38 4F 51 4B 5E 60 59
+				63 66 5E A4 E4 A4 08 00 80 00 00 22
+				39 01 00 00 00 00 02 B0 CD
+				39 01 00 00 00 00 0F D3 E2 06 06 06
+				92 2C 6A 80 5F 4C 40 33 FF 90
+				39 01 00 00 00 00 02 F7 07
+			];
 			mi,mdss-dsi-flat-mode-off-command = [
 				39 01 00 00 00 00 03 F0 5A 5A
 				39 00 00 00 00 00 29 C6
@@ -2036,8 +2107,20 @@
 				39 01 00 00 09 00 03 F0 A5 A5
 
 			];
+			mi,mdss-dsi-nature-flat-mode-off-command = [
+				39 01 00 00 00 00 03 F0 5A 5A
+				39 01 00 00 00 00 29 C6 37 01 E1 FF
+				67 86 00 B0 0E FF FF 0E FF 80 91 13
+				0E 0F 0E 3B 3D 38 4F 51 4B 5E 60 59
+				63 66 5E A4 E4 A4 08 00 80 00 00 22
+				39 01 00 00 00 00 02 B0 CD
+				39 01 00 00 00 00 02 D3 00
+				39 01 00 00 00 00 02 F7 07
+			];
 			mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-nature-flat-mode-on-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-nature-flat-mode-off-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-crc-off-command = [
 				/* CRC Disable (Normal mode) */
 				39 01 00 00 00 00 02 80 00
@@ -2052,6 +2135,7 @@
 					39 00 00 00 00 00 03 F0 5A 5A
 					39 00 00 00 00 00 03 FC 5A 5A
 					15 00 00 00 00 00 02 53 30
+					39 00 00 00 00 00 03 51 00 00
 					15 00 00 00 00 00 02 60 08
 					15 00 00 00 00 00 02 F7 07
 					15 00 00 00 00 00 02 B0 43
@@ -2095,9 +2179,9 @@
 					80 08 00 80 08 00
 					15 00 00 00 00 00 02 F7 07
 					39 00 00 00 00 00 03 F0 A5 A5
-					39 01 00 00 16 00 03 FC A5 A5
+					39 01 00 00 22 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-1000nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-1000nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command = [
 					/* 90hz lbm nolp */
@@ -2157,9 +2241,9 @@
 					80 08 00 80 08 00
 					15 00 00 00 00 00 02 F7 07
 					39 00 00 00 00 00 03 F0 A5 A5
-					39 01 00 00 16 00 03 FC A5 A5
+					39 01 00 00 22 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-750nit-command = [
 					/* Local HBM setting*/
@@ -2211,7 +2295,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-750nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-750nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-500nit-command = [
 					/* Local HBM setting*/
@@ -2263,7 +2347,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-500nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-500nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-110nit-command = [
 					/* Local HBM setting*/
@@ -2313,9 +2397,9 @@
 					80 08 00 80 08 00
 					15 00 00 00 00 00 02 F7 07
 					39 00 00 00 00 00 03 F0 A5 A5
-					39 01 00 00 16 00 03 FC A5 A5
+					39 01 00 00 22 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command = [
 					/* 90hz lbm nolp */
@@ -2375,9 +2459,9 @@
 					80 08 00 80 08 00
 					15 00 00 00 00 00 02 F7 07
 					39 00 00 00 00 00 03 F0 A5 A5
-					39 01 00 00 16 00 03 FC A5 A5
+					39 01 00 00 22 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-82nit-command = [
 					/* Local HBM setting*/
@@ -2429,7 +2513,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-82nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-82nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-white-55nit-command = [
 					/* Local HBM setting*/
@@ -2481,7 +2565,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-white-55nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-white-55nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
 					/* Local HBM setting*/
@@ -2533,7 +2617,7 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 					39 01 00 00 00 00 03 FC A5 A5
 			];
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 					/* Local HBM setting*/
@@ -2541,7 +2625,17 @@
 					15 00 00 00 00 00 02 53 20
 					39 01 00 00 00 00 03 F0 A5 A5
 			];
-			mi,mdss-dsi-local-hbm-off-to-normal-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-normal-command-state = "dsi_hs_mode";
+
+			mi,mdss-dsi-local-hbm-off-to-hbm-command = [
+					/* Local HBM setting*/
+					39 00 00 00 00 00 03 F0 5A 5A
+					15 00 00 00 00 00 02 53 E8
+					39 00 00 00 00 00 03 51 00 00
+					15 00 00 00 00 00 02 F7 07
+					39 01 00 00 00 00 03 F0 A5 A5
+			];
+			mi,mdss-dsi-local-hbm-off-to-hbm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-hlpm-command = [
 					/* Local HBM setting*/
@@ -2558,7 +2652,7 @@
 					15 00 00 00 00 00 02 F7 07
 					39 01 00 00 00 00 03 F0 A5 A5
 			];
-			mi,mdss-dsi-local-hbm-off-to-hlpm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-hlpm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-llpm-command = [
 					/* Local HBM setting*/
@@ -2575,7 +2669,7 @@
 					15 00 00 00 00 00 02 F7 07
 					39 01 00 00 00 00 03 F0 A5 A5
 			];
-			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_lp_mode";
+			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-spr-1d-rendering-command = [
 					39 00 00 00 00 00 03 F0 5A 5A
@@ -2590,12 +2684,6 @@
 					39 01 00 00 00 00 03 F0 A5 A5
 			];
 			mi,mdss-dsi-spr-2d-rendering-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-color-invert-on-command = [05 01 00 00 00 00 01 21];
-			mi,mdss-dsi-color-invert-on-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-color-invert-off-command = [05 01 00 00 00 00 01 20];
-			mi,mdss-dsi-color-invert-off-command-state = "dsi_lp_mode";
 		};
 	};
 };
