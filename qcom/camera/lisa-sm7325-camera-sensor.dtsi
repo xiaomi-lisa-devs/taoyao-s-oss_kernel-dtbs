@@ -1,6 +1,22 @@
 #include <dt-bindings/clock/qcom,camcc-yupik.h>
 
 
+
+&i2c_freq_custom_cci0 {
+    hw-thigh = <16>;
+    hw-tlow = <22>;
+    hw-tsu-sto = <17>;
+    hw-tsu-sta = <18>;
+    hw-thd-dat = <16>;
+    hw-thd-sta = <15>;
+    hw-tbuf = <24>;
+    hw-scl-stretch-en = <1>;
+    hw-trdhld = <3>;
+    hw-tsp = <3>;
+    cci-clk-src = <37500000>;
+    status = "ok";
+};
+
 &L2I {
 	regulator-min-microvolt = <950000>;
 	regulator-max-microvolt = <1200000>;
