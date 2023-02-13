@@ -13,6 +13,12 @@
 	qcom,led-mask = <1>; /* Channels 1*/
 };
 
+&pm8008i_l7 {
+	regulator-min-microvolt = <2904000>;
+	regulator-max-microvolt = <3104000>;
+	qcom,min-dropout-voltage = <150000>;
+};
+
 &i2c_freq_custom_cci0 {
 	hw-thigh = <16>;
 	hw-tlow = <22>;
@@ -210,8 +216,8 @@
 		cam_vio-supply = <&L5I>;
 		regulator-names = "cam_vaf", "cam_vio";
 		rgltr-cntrl-support;
-		rgltr-min-voltage = <2800000 1800000>;
-		rgltr-max-voltage = <2800000 1800000>;
+		rgltr-min-voltage = <3104000 1800000>;
+		rgltr-max-voltage = <3104000 1800000>;
 		rgltr-load-current = <300000 10000>;
 		status = "ok";
 	};
